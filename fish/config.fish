@@ -26,6 +26,7 @@ alias ls='ls --color=auto'
 alias vim='nvim'
 alias vi='nvim'
 alias spotify='dbus-run-session spotify'
+alias tlauncher='java -jar ~/Games/TLauncher/starter-core.jar'
 
 function dots-push
     set -l current_dir (pwd)
@@ -37,9 +38,6 @@ function dots-push
 end
 
 ### --- PROGRAMS --- ###
-if type -q fastfetch
-    fastfetch
-end
 
 # Initialize Starship Prompt (ONLY ONCE)
 if type -q starship
