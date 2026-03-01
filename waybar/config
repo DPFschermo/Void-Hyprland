@@ -42,14 +42,14 @@
     "format": "  {}%",
     "max-length": 10,
     "tooltip-format": "Memory Used: {used:0.1f}G / {total:0.1f}G",
-    "on-click": "kitty -e btop"
+    "on-click": "foot -e btop"
 },
 
   "network": {
       "format-wifi": "  {essid} ({signalStrength}%)",
       "format-ethernet": "󰈀  Ethernet",
       "format-disconnected": "⚠  Disconnected",
-      "on-click": "kitty -e nmtui",
+      "on-click": "foot -e nmtui",
       "tooltip": true,
       "interval": 3
     },
@@ -59,24 +59,9 @@
 	  "interval": 3
   },
 
-  "custom/mem": {
-    "format": "  {}%",
-    "interval": 5,
-    "exec": "free -m | awk '/Mem:/ {print int($3/$2 * 100)}'",
-    "on-click": "kitty -e btop"
-},
-
   "battery": {
 	  "format": "󰁹 {capacity}%",
 	  "interval": 10
-  },
-
-  "custom/pipewire": {
-    "exec": "wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{print int($2 * 100)\"%\"}'",
-    "interval": 1,
-    "format": "   {}",
-    "on-click": "pavucontrol",
-    "signal": 1
   },
 
   "custom/power": {
@@ -89,7 +74,7 @@
     "format": "{}",
     "exec": "/home/fraggi/.config/waybar/scripts/check-updates.sh",
     "interval": 3600,
-    "on-click": "kitty -e fish -c 'sudo xbps-install -Su; fish'",
+    "on-click": "foot -e fish -c 'sudo xbps-install -Su; fish'",
     "tooltip": false
 },
 

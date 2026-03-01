@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# Get the name of your external monitor from hyprctl
-# Replace 'HDMI-A-1' and 'eDP-1' with your actual names
 EXTERNAL="HDMI-A-1"
 INTERNAL="eDP-1"
 
