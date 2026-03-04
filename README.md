@@ -7,10 +7,10 @@
 ![Main](screenshots/Centered_Fastfetch.png)
 ![Main](screenshots/Centered_logo_Mill.png)
 ![Main](screenshots/Centered_logo_winter.png)
-![Main](screenshots/Showcase_with_new_logo.png)
 
-### Terminal & Fetch
+### Terminal
 ![Terminal](screenshots/Terminal.png)
+![Terminal](screenshots/Showcase_with_new_logo.png)
 
 # Directories
 hypr .config/hypr/  (here you have hyprland.conf and hyprlock.conf)
