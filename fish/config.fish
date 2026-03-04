@@ -30,10 +30,14 @@ alias tlauncher='java -jar ~/Games/TLauncher/starter-core.jar'
 
 function dots-push
     set -l current_dir (pwd)
+    set -l timestamp (date +%Y-%m-%d_%H:%M) # Get the date first
+
     cd ~/Void-Hyprland
     git add .
-    git commit -m "Update dots: (date +%Y-%m-%d_%H:%M)"
+    git commit -m "Update dots: $timestamp" # Use the variable here
+    git pull --rebase origin main # Add this to solve your "push" issue!
     git push origin main
+
     cd $current_dir
 end
 
