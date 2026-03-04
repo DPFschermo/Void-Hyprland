@@ -28,7 +28,7 @@
 }
 
 /* --- MODULES --- */
-#memory, #cpu, #battery, #network, #pulseaudio, #custom-wallpaper {
+#memory, #cpu, #battery, #network, #pulseaudio, #custom-servicemanager, #custom-wallpaper {
     padding: 0 6px;
     color: @foreground;
 }
@@ -64,6 +64,7 @@
 #memory, 
 #cpu, 
 #battery, 
+#custom-servicemanager
 #network, 
 #pulseaudio,
 #custom-power {
@@ -76,6 +77,7 @@
 #network:hover,
 #battery:hover,
 #cpu:hover,
+#custom-servicemanager
 #memory:hover,
 #pulseaudio:hover {
     background: @color2;

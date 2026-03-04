@@ -5,10 +5,10 @@ set CHOICE (ls "$DIR" | sed 's/^/  /' | wofi --show dmenu --prompt 'Select Wa
 [ -z "$CHOICE" ] && exit 0
 set FILENAME (echo "$CHOICE" | sed 's/^  //' | string collect; or echo)
 set FULL_PATH "$DIR"'/'"$FILENAME"
-# 1. Set the wallpaper
 swww img "$FULL_PATH" --transition-type grow --transition-pos center
-# 2. Generate the new colors
 wal -i "$FULL_PATH" -q
+sed -i 's/alpha=ff/alpha=1.0/g' $HOME/.cache/wal/colors-foot.ini
+pkill -USR1 foot
 cp "$FULL_PATH" "$HOME"'/.cache/wal/target_wallpaper.png'
 # 3. FORCE WAYBAR TO RELOAD COLORS
 # USR2 tells waybar to reload the CSS specifically

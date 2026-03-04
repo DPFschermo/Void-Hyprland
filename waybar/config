@@ -7,7 +7,7 @@
 
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["clock"],
-  "modules-right": ["custom/updates", "network", "battery", "cpu", "memory", "pulseaudio", "custom/wallpaper", "custom/power"],
+  "modules-right": ["custom/updates", "network", "battery", "cpu", "memory", "pulseaudio", "custom/servicemanager", "custom/wallpaper", "custom/power"],
 
   "hyprland/workspaces": {
     "format": "{name}",
@@ -42,14 +42,14 @@
     "format": "  {}%",
     "max-length": 10,
     "tooltip-format": "Memory Used: {used:0.1f}G / {total:0.1f}G",
-    "on-click": "foot -e btop"
+    "on-click": "kitty -e btop"
 },
 
   "network": {
-      "format-wifi": "  {essid} ({signalStrength}%)",
+      "format-wifi": "   {essid} ({signalStrength}%)",
       "format-ethernet": "󰈀  Ethernet",
       "format-disconnected": "⚠  Disconnected",
-      "on-click": "foot -e nmtui",
+      "on-click": "kitty -e nmtui",
       "tooltip": true,
       "interval": 3
     },
@@ -69,6 +69,12 @@
 	  "tooltip": false,
     "on-click": "~/.config/waybar/scripts/powermenu.fish"
   },
+
+  "custom/servicemanager": {
+      "format": "󰹯 ",
+      "tooltipe": false,
+      "on-click": "foot -e python3 ~/service-management-suite/rsm"
+    },
 
   "custom/updates": {
     "format": "{}",
