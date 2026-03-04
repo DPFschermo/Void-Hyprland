@@ -7,6 +7,7 @@
 ![Main](screenshots/Centered_Fastfetch.png)
 ![Main](screenshots/Centered_logo_Mill.png)
 ![Main](screenshots/Centered_logo_winter.png)
+![Main](screenshots/Showcase_with_new_logo.png)
 
 ### Terminal & Fetch
 ![Terminal](screenshots/Terminal.png)
