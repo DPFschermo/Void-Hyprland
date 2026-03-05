@@ -41,6 +41,10 @@ function dots-push
     cd $current_dir
 end
 
+function syscleaning
+    doas xbps-install -Syu; and doas vkpurge rm all; and doas xbps-remove -Oo
+end
+
 ### --- PROGRAMS --- ###
 
 # Initialize Starship Prompt (ONLY ONCE)
